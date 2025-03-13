@@ -50,13 +50,13 @@ body {
 a{
 	text-decoration:none;
 	cursor:pointer;
-	color: #ff5722;
+	color: var(--primary-color);;
 }
 
 a:hover,a:focus,a:visited{
 	text-decoration:none;
 	outline:none;
-	color: #ff5722;
+	color: var(--primary-color);;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -205,7 +205,7 @@ p{
 #sidebar .menu-box .sticky-menu > ul > li > a:hover,
 #sidebar .menu-box .sticky-menu > ul > li.current > a,
 #sidebar .menu-box .sticky-menu > ul > li.current-menu-item > a{
-	color: #ff5722;
+	color: var(--primary-color);;
 }
 
 #sidebar .copyright{
@@ -304,7 +304,7 @@ p{
 	margin-bottom:10px;
 	font-weight:600;
 	font-family: 'Montserrat', sans-serif;
-	color:#ff5722;	
+	color:var(--primary-color);;	
 }
 
 .introduction .sec-content h3{
