@@ -32,7 +32,6 @@
 
 
 
-
 @import url(../css/bootstrap.min.css);
 @import url(../css/bootstrap-select.min.css);
 @import url(../css/jquery.bootstrap-touchspin.css);
@@ -70,6 +69,10 @@
 }
 
 
+@font-face {
+  font-family: 'nunito';
+  src: url('../fonts/Nunito-Black.ttf') format('truetype');
+}
 /* ==============================
    2. Global styles
    ============================== */
@@ -78,6 +81,7 @@
 :root {
   --primary-color: #1c8ac9;  /* Azul */
   --secondary-color: #dd5a44; /* Laranja */
+ 
 }
 
 body {
@@ -134,6 +138,96 @@ input,textarea {font-family: 'Roboto', sans-serif;display: block; font-size: 16p
 .paddt-50 {
   padding-top: 50px;
 }
+/* General Styles */
+.body-volunteer {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.become-volunteer {
+  width: 90%;
+  max-width: 1200px;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 0px;
+
+}
+
+.form-volunteer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.row-volunteer {
+  flex: 1 1 calc(33.333% - 15px); /* Divide em 3 colunas */
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.row-volunteer.full-width {
+  flex: 1 1 100%; /* Ocupa toda a largura */
+}
+
+.row-volunteer label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.row-volunteer input[type="text"],
+.row-volunteer input[type="email"],
+.row-volunteer input[type="tel"],
+.row-volunteer input[type="date"],
+.row-volunteer select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 0px;
+  font-size: 16px;
+}
+
+.options-volunteer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.options-volunteer label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+button {
+ 
+    padding: 10px 15px;
+    background-color: var(--secondary-color);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 150px; /* Largura fixa de 150px */
+    margin: 0 auto; /* Centraliza o botão horizontalmente */
+
+}
+
+.button-container {
+  display: flex;
+  justify-content: center; /* Centraliza o botão horizontalmente */
+  width: 100%; /* Ocupa toda a largura disponível */
+  margin-top: 15px; /* Espaçamento acima do botão */
+}
+
+button:hover {
+  background-color: #ed1313;
+}
 
  .overlay3 {
   position: absolute;
@@ -159,7 +253,7 @@ input,textarea {font-family: 'Roboto', sans-serif;display: block; font-size: 16p
 }
 
 .list_inline li {
-  display: inline-block;
+  display: inline-block; 
 }
 
 .padd-80 {
@@ -174,12 +268,12 @@ input,textarea {font-family: 'Roboto', sans-serif;display: block; font-size: 16p
 }
 
 .thm-color {
-  color: #1c8ac9;
+  color: rgb(164, 164, 164);
   font-size: 45px;
   text-shadow: 
-  1px 1px 0px #000, 
-  1px 1px 0px #333, 
-  1px 1px 0px #666, 
+  1px 1px 1px #000000, 
+  1px 1px 1px #000000, 
+  1px 1px 1px #000000, 
   1px 1px 1px rgba(0, 0, 0, 0.5);
  
 }
@@ -245,10 +339,25 @@ input,textarea {font-family: 'Roboto', sans-serif;display: block; font-size: 16p
 }
 
 
-
+.button.volunteer:hover {
+  background-color: #449cfa;
+}
+.button.volunteer {
+  background-color:var(--secondary-color);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+  margin: 20px auto;
+  width: 200px;
+  height: 50px;
+}
 .section-title {
   position: relative;
-  margin-bottom: 50px;
+
 }
 .section-title h2 {
   position: relative;
@@ -618,8 +727,8 @@ input,textarea {font-family: 'Roboto', sans-serif;display: block; font-size: 16p
   outline: none !important;
 }
 .default-form  .dropdown-menu>li>a:focus, .dropdown-menu>li>a:hover {
-  background-color: var(--primary-color);;
-  color: #fff;
+  background-color:#000
+  
 }
 .default-form .form-control:focus {
   border-color: var(--primary-color);;
@@ -1517,21 +1626,24 @@ input,textarea {font-family: 'Roboto', sans-serif;display: block; font-size: 16p
 ***/
 
 .rev_slider_wrapper {
-    margin-top: -151px;
+  margin-top: -80px;
+  position: relative;
 }
 
 .rev_slider_wrapper .slide-content-box h3 {
   color: var(--primary-color);;
   font-weight: 700;
+  text-align: right;
 }
 
 .rev_slider_wrapper .slide-content-box h1 {
   color: #ffffff;
+  margin-left: 100px;
+  margin-top: 25px;
   font-size: 48px;
-  line-height: 62px;
-  margin: 14px 0 9px;
   font-weight: 700;
-  border: #000;
+  border: #000000;
+  font-family:Arial, Helvetica, sans-serif;
   text-shadow: 
   1px 1px 0px #000, 
   1px 1px 0px #333, 
@@ -1539,19 +1651,22 @@ input,textarea {font-family: 'Roboto', sans-serif;display: block; font-size: 16p
   1px 1px 1px rgba(0, 0, 0, 0.5);
  
 }
-.rev_slider_wrapper .slide-content-box h2{
-  color: #ffffff;
-  font-size: 18px;
-  line-height: 30px;
-  font-weight: 300;
-  margin: 0 0 30px;
 
+.rev_slider_wrapper .slide-content-box h2{
+  color: var(--secondary-color);
+  margin-left: 350px;
+  margin-top: 10px;
+  font-size: 38px;
+  font-weight: 700;
+ 
+  font-family:Arial, Helvetica, sans-serif Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   text-shadow: 
-        1px 1px 0px #000, 
-        1px 1px 0px #333, 
-        1px 1px 0px #666, 
-        1px 1px 1px rgba(0, 0, 0, 0.5);
+  1px 1px 0px #000, 
+  1px 1px 0px #333, 
+  1px 1px 0px #666, 
+  1px 1px 1px rgba(0, 0, 0, 0.5);
 }
+
 .rev_slider_wrapper a.thm-btn.style-3,
 .rev_slider_wrapper a.thm-btn {
   transition: all 500ms ease !important;
@@ -1582,19 +1697,15 @@ input,textarea {font-family: 'Roboto', sans-serif;display: block; font-size: 16p
     pointer-events: none;
 }
 
-.tp-bannertimer {
+ .tp-bannertimer {
   display: none;
   
 }
 
-.rev_slider_wrapper .tparrows {
-  border-radius: 50%;
-  width: 60px;
-  height: 60px;
-  line-height: 60px;
-  background: rgba(0, 0, 0, 0.2);
+ .rev_slider_wrapper .tparrows {
+  display: none;
 
-}
+} 
 
 
 .tparrows:before {
@@ -1608,7 +1719,7 @@ input,textarea {font-family: 'Roboto', sans-serif;display: block; font-size: 16p
 
 .tparrows.tp-rightarrow:before {
   content: "\e927";
-}
+} */
 
 
 /*** 
@@ -4619,7 +4730,7 @@ input,textarea {font-family: 'Roboto', sans-serif;display: block; font-size: 16p
   font-weight: 700;
   text-transform: uppercase;
   line-height: 60px;
-  color: #fff;
+  color: #000000;
 }
 .inner-banner .box {
   position: relative;
