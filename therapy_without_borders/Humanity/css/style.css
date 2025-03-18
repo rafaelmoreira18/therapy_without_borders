@@ -1619,6 +1619,21 @@ button:hover {
 }
 
 
+
+.banner-Home{
+  font-family: 'Helvetica Neue', Arial, sans-serif; /* Fonte moderna e limpa */
+    font-size: 2.5rem; /* Tamanho grande para impacto visual */
+    font-weight: 300; /* Peso leve para um look minimalista */
+    color: #333; /* Cor escura para contraste */
+    text-align: center; /* Centraliza o texto */
+    margin: 0; /* Remove margens padrão */
+    padding: 20px 0; /* Espaçamento interno */
+    letter-spacing: -0.05rem; /* Espaçamento entre letras sutil */
+    line-height: 1.2; /* Altura da linha para melhor legibilidade */
+    text-transform: uppercase; /* Transforma o texto em maiúsculas */
+    position: relative; /* Para adicionar efeitos extras, se necessário */
+}
+
 /*** 
 =============================================
     Rev Slider Wrapper style
@@ -1626,15 +1641,24 @@ button:hover {
 ***/
 
 .rev_slider_wrapper {
-  margin-top: -80px;
+  margin-top: -120px;
   position: relative;
 }
 
 .rev_slider_wrapper .slide-content-box h3 {
-  color: var(--primary-color);;
-  font-weight: 700;
-  text-align: right;
+  font-family: 'Montserrat', sans-serif;
+    font-size: 2.8rem;
+    font-weight: 600;
+    color: #ffffff;
+    text-align: center;
+    margin: 0;
+    padding: 20px 0;
+    letter-spacing: -0.03rem;
+    line-height: 1.3;
+    text-transform: uppercase;
+
 }
+
 
 .rev_slider_wrapper .slide-content-box h1 {
   color: #ffffff;
