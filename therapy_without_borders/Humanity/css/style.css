@@ -79,7 +79,7 @@
 
 /* atcually primary collor var(--primary-color); */
 :root {
-  --primary-color: #1c8ac9;  /* Azul */
+  --primary-color: #dd5a44;  /* Azul */
   --secondary-color: #dd5a44; /* Laranja */
  
 }
@@ -1241,7 +1241,8 @@ button:hover {
 /*======logo========*/
 
 .main-logo {
-  height: 120px
+  margin: 27px 0;
+  
 }
 
 /*=====menu========*/
@@ -1279,11 +1280,11 @@ button:hover {
 
 }
 .theme_menu .menu-column {
+  
   padding-left: 0;
+  margin-top: 50px;
   padding-right: 170px;
   position: fixed;
-
-  
 }
 
 .theme_menu .defaultmainmenu {
@@ -1295,7 +1296,6 @@ button:hover {
 
 .defaultmainmenu-menu > li > a {
   position: relative;
-  padding: 40px 16px;
   text-transform: uppercase;
   color: #000000;
   font-weight: 700;
@@ -1647,6 +1647,7 @@ button:hover {
 
 .rev_slider_wrapper .slide-content-box h3 {
   font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
     font-size: 2.8rem;
     font-weight: 600;
     color: #ffffff;
@@ -2400,6 +2401,7 @@ button:hover {
 
 
 .fact-counter-1{
+  width: 100%;
   position:relative;
   padding: 70px 0px 40px;
   background-repeat:no-repeat;
@@ -2665,11 +2667,12 @@ button:hover {
   margin-bottom: 30px;
 }
 
+
 .about-2 .icon_box {
   position: relative;
   font-size: 50px;
   line-height: 50px;
-  color: var(--primary-color);;
+  color: var(--primary-color);
   margin-right: 20px;
   padding-right: 15px;
   border-right: 1px solid #f4f4f4;
