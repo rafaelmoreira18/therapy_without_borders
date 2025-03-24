@@ -80,7 +80,7 @@
 /* atcually primary collor var(--primary-color); */
 :root {
   --primary-color: #dd5a44;  /* Azul */
-  --secondary-color: #dd5a44; /* Laranja */
+  --secondary-color:#dd5a44; /* Laranja */
  
 }
 
@@ -2416,10 +2416,11 @@ button:hover {
 .fact-counter-1:before{
   content:'';
   position:absolute;
+  border-radius: 19px;
   left:0px;
   top:0px;
   width:100%;
-  height:100%;
+  height:300px;
   background: rgba(0, 0, 0, 0.85);
   z-index:0;
 }
@@ -2456,7 +2457,7 @@ button:hover {
   position: relative;
   right: 5px;
   margin-bottom: 5px;
-  color: var(--primary-color);;
+  color: var(--secondary-color);
   transition:all 500ms ease;
   -moz-transition:all 500ms ease;
   -webkit-transition:all 500ms ease;
@@ -3954,7 +3955,7 @@ button:hover {
 
 .donate-section .donate-btn {
     display: inline-block;
-    background: var(--primary-color);
+    background: var(--secondary-color);
     color: #fff;
     padding: 12px 25px;
     font-size: 18px;
@@ -3964,13 +3965,13 @@ button:hover {
 }
 
 .donate-section .donate-btn:hover {
-    background: #323232;
+    background:var(--secondary-color);
 }
 
 .donate-section .donate-btn.secondary {
-    background: transparent;
-    color: var(--primary-color);
-    border: 2px solid var(--primary-color);
+    background: black;
+    color: white;
+    border:black;
 }
 
 .donate-section .donate-btn.secondary:hover {
@@ -4772,8 +4773,20 @@ button:hover {
 
 /*===========footer bottom ================*/
 
+footer {
+  background: #222;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+.footer-contact p, .footer-contact a {
+  color: #ccc;
+  background-color: #000;
+  font-size: 14px;
+  margin: 5px 0;
+}
 .footer-bottom {
-  background: #2b2b2b;
+  background: black;
   border-top: 1px solid #363636;
   padding: 21px 0;
 }
@@ -4782,18 +4795,49 @@ button:hover {
   font-size: 14px;
 }
 .footer-bottom .copy-text a {
-  color: var(--primary-color);;
+  color: white;
   font-size: 14px;
 }
-
 .footer-bottom a {
-  color: var(--primary-color);;
+  color:white;
   font-size: 16px;
   transition: .3s ease;
 }
-
-
-
+.footer-bottom .container {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+}
+.social-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 10px;
+}
+.social-links ul li {
+  display: inline-block;
+}
+.social-links ul li a {
+  color: white;
+  font-size: 20px;
+  transition: .3s ease;
+}
+.social-links ul li a:hover {
+  color: #ccc;
+}
+.get-text a {
+  background: #444;
+  padding: 8px 15px;
+  border-radius: 5px;
+  text-decoration: none;
+}
+.get-text a:hover {
+  background: #666;
+}
 
 
 
