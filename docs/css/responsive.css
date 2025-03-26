@@ -235,15 +235,7 @@
 
 }
 
-@media (max-width: 475px) {
-	.fact-counter .column {
-	    width: inherit;
-	    margin: 0 auto;
-	    margin-bottom: 20px;
-	    float: inherit;
-	    display: inline-block;
-	}
-}
+
 @media (max-width: 420px) {
 	.top-bar-text p {
 		margin-bottom: 0px;
