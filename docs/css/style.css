@@ -588,7 +588,7 @@ button:hover {
 
 .accordion-box .accordion .acc-btn.active .toggle-icon .plus {
     opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 
 
@@ -604,11 +604,11 @@ button:hover {
 }
 .accordion-box .accordion .acc-btn .toggle-icon .minus{
     opacity: 0;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
 }
 .accordion-box .accordion .acc-btn.active .toggle-icon .minus {
     opacity: 1;
-    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
 }
 
 .accordion-box .accordion .acc-content {
@@ -7758,7 +7758,7 @@ footer {
 }
 
 .styled-form select{
-  -webkit-appearance:none;
+  appearance:none;
   -ms-appearance:none;
   -moz-appearance:none;
   -o-appearance:none;
@@ -7811,7 +7811,7 @@ footer {
 
 .social-links-two a:hover{
   opacity:0.80;
-  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
+  filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=80)";
 }
 
 .social-links-two .facebook{
