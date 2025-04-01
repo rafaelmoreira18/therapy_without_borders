@@ -57,10 +57,8 @@
 	
 }
 
-
-
 @media (max-width: 991px) {
-
+	
 	.defaultmainmenu-menu li .indicator {
 		display: block
 		;
